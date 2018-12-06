@@ -27,7 +27,8 @@ class Car {
     
     //給油する
     func addFuel(fuel: Double) {
-        if fuelMax < fuelRest + fuel {
+        if fuelMax <= fuelRest + fuel {
+            print("満タンです")
             fuelRest = fuelMax
         } else {
             fuelRest += fuel
@@ -37,12 +38,13 @@ class Car {
     /// 車を走らせる
     func run(distance: Double) {
         
-        fuelRest -= (distance / fuelRatio)
-        
-        if fuelRest < 0 {
-            print("ガソリンが足りません")
+        if fuelRest - (distance / fuelRatio) < 0 {
+            let Distance = fuelRest * fuelRatio
+            print("ガソリンが足りません。\n\(Distance)キロ走行します。")
+            fuelRest = 0
         } else {
             print("\(distance)キロ走行します。")
+            fuelRest -= (distance / fuelRatio)
         }
     }
 }
