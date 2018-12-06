@@ -43,7 +43,7 @@ func main() {
             break
             
         case 6:
-            print("現在の積載量は\(amount)キロです。")
+            truck.displayAmount()
             break
             
         default:
