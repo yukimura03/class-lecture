@@ -38,6 +38,7 @@ class Truck : Car {
     }
     
     func unloadGoods(){
+        print("荷物を全て降ろします。")
         amount = 0
     }
     
