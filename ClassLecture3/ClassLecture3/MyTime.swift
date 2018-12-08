@@ -10,12 +10,11 @@ import Foundation
 
 class MyTime {
     
-    var hour : String
-    var minute : String
-    var second : String
+    var hour : Int
+    var minute : Int
+    var second : Int
     
-    
-    init(hour:String, minute: String, second: String){
+    init(hour:Int, minute: Int, second: Int){
         self.hour = hour
         self.minute = minute
         self.second = second
@@ -23,42 +22,30 @@ class MyTime {
     
     func setTime(hour:Int){
         if hour < 24 {
-            if hour < 10 {
-                self.hour = "0" + String(hour)
-            } else {
-                self.hour = String(hour)
-            }
+            self.hour = hour
         } else {
-            self.hour = "00"
+            self.hour = 0
         }
     }
     
     func setTime(minute:Int){
         if minute < 60 {
-            if minute < 10 {
-                self.minute = "0" + String(minute)
-            } else {
-                self.minute = String(minute)
-            }
+            self.minute = minute
         } else {
-            self.minute = "00"
+            self.minute = 0
         }
     }
     
     func setTime(second:Int){
         if second < 60 {
-            if second < 10 {
-                self.second = "0" + String(second)
-            } else {
-                self.second = String(second)
-            }
+            self.second = second
         } else {
-            self.second = "00"
+            self.second = 0
         }
     }
     
     func getTime(){
-        print("\(hour):\(minute):\(second)に設定されました")
+        print("\(NSString(format: "%02d",hour)):\(NSString(format: "%02d",minute)):\(NSString(format: "%02d",second))に設定されました")
     }
     
 }

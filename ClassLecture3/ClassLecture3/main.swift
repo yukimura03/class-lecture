@@ -10,7 +10,7 @@ import Foundation
 
 func main() {
     
-    let myTime = MyTime(hour: "00", minute: "00", second: "00")
+    let myTime = MyTime(hour: 0, minute: 0, second: 0)
     
     while true {
         print("時を入力　＞")
