@@ -11,11 +11,13 @@ import Foundation
 class Truck : Car {
     var amountMax : Int
     var amount : Int
+    var A : String
     
     init(aMax: Double, fRatio: Double, fMax: Double) {
         //aMaxは最大積載量。 fRatioは燃費。fMaxは燃料の最大量。
         self.amountMax = Int(aMax)
         self.amount = 0
+        self.A = ""
         super.init(fuelMax: fMax, fuelRest: 0, fuelRatio: fRatio)
         super.fuelRest = fuelRest
     }
@@ -30,10 +32,15 @@ class Truck : Car {
     }
     
     func unloadGoods(a:Int) {
-        if amount - a < 0 {
-            amount = 0
+        A = String(a)
+        if A == nil {
+            unloadGoods()
         } else {
-            amount -= a
+            if amount - a < 0 {
+                amount = 0
+            } else {
+                amount -= a
+            }
         }
     }
     
