@@ -10,7 +10,7 @@ import Foundation
 
 func main(){
     
-    let pool = Pool(water: 0)
+    let pool = Pool()
     
     while true {
         

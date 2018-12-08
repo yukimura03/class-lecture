@@ -11,8 +11,8 @@ import Foundation
 class Pool {
     var water : Double
     
-    init(water: Double){
-        self.water = water
+    init(){
+        self.water = 0
     }
     
     
