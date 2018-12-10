@@ -23,24 +23,34 @@ class Account {
         totalAmount = 0
     }
     
-    func checkPin(p: Int){
-        
+    func checkPin(p: Int) -> Bool{
+        if p == pin {
+            return true
+        } else {
+            return false
+        }
     }
     //暗証番号が正しいかどうかをチェックする
     
-    func deposit(){
-        
+    func deposit(money: Int){
+        amount += money
+        print("\(money)円預入しました。")
     }
     //引数に指定した金額を口座に入れる
     
-    func draw(){
-        
+    func draw(money: Int){
+        if money <= amount {
+            amount -= money
+            print("\(money)円引出しました。")
+        } else {
+            print("残高が不足しています。")
+        }
     }
     //引数に指定した金額を口座から引き出す
     //残高が不足する場合は1円も引き出さない
     
-    func displayInfo(){
-        
+    func displayInfo(accountNum: Int){
+        print("\(accountNum)---口座番号：\(num), 残高：\(amount)")
     }
     //口座番号と残高を表示する
     
