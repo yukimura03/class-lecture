@@ -22,7 +22,8 @@ func main(){
         switch no {
         
         case 1:
-            if numOfAccounts >= 10 {
+            let count = Account.getTotalAccount(numOfAccount: accountList.count)
+            if count >= 10 {
                 print("これ以上口座は作れません")
             } else {
                 print("口座番号を入力してください >")
@@ -32,8 +33,7 @@ func main(){
                 print("初期預入金額を入力して下さい >")
                 let amount = KeyboardUtils.inputInt()
                 
-                accountBox[numOfAccounts] = Account.init(num: num, pin: pin, amount: amount)
-                numOfAccounts += 1
+                accountBox[count] = Account.init(num: num, pin: pin, amount: amount)
             }
             break
         
@@ -72,7 +72,12 @@ func main(){
             break
         
         case 4:
-            
+            var amountList = [Int]()
+            for n in 0 ..< amountList.count {
+                amountList.append(accountList[n].amount)
+            }
+            let total = amountList.reduce(0){$0 + $1}
+            Account.displayTotalAmount(totalAmount: total)
             break
         
         default:

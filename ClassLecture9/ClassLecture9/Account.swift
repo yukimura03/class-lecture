@@ -54,12 +54,13 @@ class Account {
     }
     //口座番号と残高を表示する
     
-    class func getTotalAccount(){
-        
+    class func getTotalAccount(numOfAccount: Int) -> Int{
+        return numOfAccount
     }
     //預金口座の総数を戻り値として返す
-    class func displayTotalAmount(){
-        
+    
+    class func displayTotalAmount(totalAmount: Int){
+        print("全口座の残高の合計は\(totalAmount)円です。")
     }
     //全口座の預入金額の総額を表示する
     
