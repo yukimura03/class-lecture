@@ -11,7 +11,6 @@ import Foundation
 func main(){
     
     var accountBox = [Account?](repeating: nil, count: 10)
-    var numOfAccounts = 0
     
     while true {
         
@@ -73,7 +72,7 @@ func main(){
         
         case 4:
             var amountList = [Int]()
-            for n in 0 ..< amountList.count {
+            for n in 0 ..< accountList.count {
                 amountList.append(accountList[n].amount)
             }
             let total = amountList.reduce(0){$0 + $1}
