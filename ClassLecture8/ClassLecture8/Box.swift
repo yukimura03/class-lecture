@@ -13,7 +13,7 @@ class Box {
     var color : String //箱の色
     var shape : String //箱の形
     var num : Int //箱の中のボールの数
-    static var totalNumber = 0 //全ての箱のボールの総数
+    var totalNumber = 0 //全ての箱のボールの総数
     
     init(color: String, shape: String, num: Int) {
         self.color = color
@@ -29,7 +29,7 @@ class Box {
     //引数として渡された個数のボールを箱に入れる
     
     func removeBalls(balls: Int){
-        if balls >= num {
+        if balls <= num {
             print("\(balls)個のボールを取り出しました。")
             num -= balls
         } else {
