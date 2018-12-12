@@ -27,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		495E48F121C1351A0041DBDD /* Lecture10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lecture10; sourceTree = BUILT_PRODUCTS_DIR; };
+		495E48F121C1351A0041DBDD /* ClassLecture10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClassLecture10; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E48F421C1351A0041DBDD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		495E48FB21C135290041DBDD /* KeyboardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardUtils.swift; sourceTree = "<group>"; };
 		495E48FD21C1358D0041DBDD /* SuperCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCar.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		495E48F221C1351A0041DBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				495E48F121C1351A0041DBDD /* Lecture10 */,
+				495E48F121C1351A0041DBDD /* ClassLecture10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,9 +77,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		495E48F021C1351A0041DBDD /* Lecture10 */ = {
+		495E48F021C1351A0041DBDD /* ClassLecture10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 495E48F821C1351A0041DBDD /* Build configuration list for PBXNativeTarget "Lecture10" */;
+			buildConfigurationList = 495E48F821C1351A0041DBDD /* Build configuration list for PBXNativeTarget "ClassLecture10" */;
 			buildPhases = (
 				495E48ED21C1351A0041DBDD /* Sources */,
 				495E48EE21C1351A0041DBDD /* Frameworks */,
@@ -89,9 +89,9 @@
 			);
 			dependencies = (
 			);
-			name = Lecture10;
+			name = ClassLecture10;
 			productName = Lecture10;
-			productReference = 495E48F121C1351A0041DBDD /* Lecture10 */;
+			productReference = 495E48F121C1351A0041DBDD /* ClassLecture10 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 495E48EC21C1351A0041DBDD /* Build configuration list for PBXProject "Lecture10" */;
+			buildConfigurationList = 495E48EC21C1351A0041DBDD /* Build configuration list for PBXProject "ClassLecture10" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				495E48F021C1351A0041DBDD /* Lecture10 */,
+				495E48F021C1351A0041DBDD /* ClassLecture10 */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		495E48EC21C1351A0041DBDD /* Build configuration list for PBXProject "Lecture10" */ = {
+		495E48EC21C1351A0041DBDD /* Build configuration list for PBXProject "ClassLecture10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				495E48F621C1351A0041DBDD /* Debug */,
@@ -289,7 +289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		495E48F821C1351A0041DBDD /* Build configuration list for PBXNativeTarget "Lecture10" */ = {
+		495E48F821C1351A0041DBDD /* Build configuration list for PBXNativeTarget "ClassLecture10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				495E48F921C1351A0041DBDD /* Debug */,
