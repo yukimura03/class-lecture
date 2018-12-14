@@ -40,6 +40,7 @@ func main() {
         case 5:
             print("何キロ降ろしますか？　＞")
             truck.unloadGoods(a: KeyboardUtils.inputInt())
+            
             break
             
         case 6:
