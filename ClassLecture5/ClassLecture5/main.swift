@@ -22,16 +22,13 @@ func main(){
         case 1:
             print("給紙する枚数を入力してください >")
             copyMachine.feedPaper(sheet: KeyboardUtils.inputInt())
-            break
             
         case 2:
             print("コピーする枚数を入力してください >")
             copyMachine.copy(sheet: KeyboardUtils.inputInt())
-            break
             
         case 3:
             copyMachine.display()
-            break
             
         default:
             print("アプリケーションを終了します。")
