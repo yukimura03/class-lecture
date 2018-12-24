@@ -14,13 +14,13 @@ class MyTime {
     var minute : Int
     var second : Int
     
-    init(hour:Int, minute: Int, second: Int){
+    init(hour: Int, minute: Int, second: Int){
         self.hour = hour
         self.minute = minute
         self.second = second
      }
     
-    func setTime(hour:Int){
+    func setTime(hour: Int){
         if hour < 24 {
             self.hour = hour
         } else {
@@ -28,7 +28,7 @@ class MyTime {
         }
     }
     
-    func setTime(minute:Int){
+    func setTime(minute: Int){
         if minute < 60 {
             self.minute = minute
         } else {
@@ -36,7 +36,7 @@ class MyTime {
         }
     }
     
-    func setTime(second:Int){
+    func setTime(second: Int){
         if second < 60 {
             self.second = second
         } else {
@@ -45,7 +45,7 @@ class MyTime {
     }
     
     func getTime(){
-        print("\(NSString(format: "%02d",hour)):\(NSString(format: "%02d",minute)):\(NSString(format: "%02d",second))に設定されました")
+        print("\(String(format: "%02d", hour)):\(String(format: "%02d", minute)):\(String(format: "%02d", second))に設定されました")
     }
     
 }
