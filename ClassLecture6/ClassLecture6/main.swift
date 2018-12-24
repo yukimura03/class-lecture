@@ -21,16 +21,13 @@ func main(){
         case 1:
             print("給水する水量を入力して下さい >")
             pool.feedWater(water: KeyboardUtils.inputDouble())
-            break
             
         case 2:
             print("排水する水量を入力してください >")
             pool.drainWater(water: KeyboardUtils.inputDouble())
-            break
             
         case 3:
             pool.display()
-            break
             
         default :
             print("アプリケーションを終了します")
