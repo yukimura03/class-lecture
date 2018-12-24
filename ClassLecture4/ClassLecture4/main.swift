@@ -12,7 +12,6 @@ func main() {
     
     let myTime = MyTime(hour: 0, minute: 0, second: 0)
     
-    
         print("時を入力　＞")
         myTime.setTime(hour: KeyboardUtils.inputInt())
         
