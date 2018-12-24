@@ -11,7 +11,7 @@ import Foundation
 func main(){
     
     let wallet = Wallet(money: 1000)
-    let vendingMachine = VendingMachine(n: 3)
+    let vendingMachine = VendingMachine(num: 3)
     
     func insertCoin() {
         let coins = KeyboardUtils.inputInt()
@@ -32,28 +32,23 @@ func main(){
         
         switch no {
             
-        case 1: //財布から指定金額を取り出して自動販売機に投入する
+        case 1: // 財布から指定金額を取り出して自動販売機に投入する
             print("自動販売機に何円入れますか？ >")
             insertCoin()
-            break
             
-        case 2: //自動販売機で商品1個を購入して釣り銭を財布に戻す
+        case 2: // 自動販売機で商品1個を購入して釣り銭を財布に戻す
             vendingMachine.purchase()
             cancel()
-            break
             
-        case 3: //自動販売機に投入した金額を取り出して財布に戻す
+        case 3: // 自動販売機に投入した金額を取り出して財布に戻す
             cancel()
-            break
             
-        case 4: //自動販売機に指定した個数だけ商品を補充する
+        case 4: // 自動販売機に指定した個数だけ商品を補充する
             print("商品を何個補充しますか？ >")
-            vendingMachine.insertGoods(n: KeyboardUtils.inputInt())
-            break
+            vendingMachine.insertGoods(num: KeyboardUtils.inputInt())
             
-        case 5: //現在の財布の中身を表示する
+        case 5: // 現在の財布の中身を表示する
             wallet.display()
-            break
             
         default :
             return

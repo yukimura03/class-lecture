@@ -19,13 +19,15 @@ class Wallet {
         }
     }
     
+    /// 引数に指定された金額を財布に入れる
     func insertMoney(coins: Int){
         if coins > 0 {
             money += coins
         }
     }
-    //引数に指定された金額を財布に入れる
     
+    /// 引数に指定された金額を財布から取り出す
+    /// ただし金額が不足する場合は財布内の全額を取り出す
     func takeOutMoney(coins: Int){
         if money >= coins {
             money -= coins
@@ -33,14 +35,9 @@ class Wallet {
             money = 0
         }
     }
-    //引数に指定された金額を財布から取り出す
-    //ただし金額が不足する場合は財布内の全額を取り出す
     
+    /// 現在の財布の中身を表示する
     func display(){
         print("財布の中身は\(money)円です")
     }
-    //現在の財布の中身を表示する
-    
-    
-    
 }
