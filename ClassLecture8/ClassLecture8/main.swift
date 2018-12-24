@@ -13,7 +13,6 @@ func main(){
     let box0 = Box(color: "赤", shape: "円形", num: 1)
     let box1 = Box(color: "青", shape: "四角", num: 2)
     
-    
     while true {
         
         print("\n1. ボール投入 / 2. ボール取出 / 3. ボール総数表示 / 4. 終了 >")
@@ -29,18 +28,17 @@ func main(){
             let boxName = KeyboardUtils.inputInt()
             
             switch boxName {
-                case 0:
-                    print("投入するボールの個数を入力して下さい >")
-                    box0.insertBalls(balls: KeyboardUtils.inputInt())
-                    break
-                case 1:
-                    print("投入するボールの個数を入力して下さい >")
-                    box1.insertBalls(balls: KeyboardUtils.inputInt())
-                    break
-                default:
-                    print("箱の番号の入力が誤っています。")
-                }
-            break
+            case 0:
+                print("投入するボールの個数を入力して下さい >")
+                box0.insertBalls(balls: KeyboardUtils.inputInt())
+                
+            case 1:
+                print("投入するボールの個数を入力して下さい >")
+                box1.insertBalls(balls: KeyboardUtils.inputInt())
+                
+            default:
+                print("箱の番号の入力が誤っています。")
+            }
             
         case 2:
             box0.displayInfo(boxName: 0)
@@ -50,23 +48,20 @@ func main(){
             let boxName = KeyboardUtils.inputInt()
             
             switch boxName {
-                case 0:
-                    print("取り出すボールの個数を入力して下さい >")
-                    box0.removeBalls(balls: KeyboardUtils.inputInt())
-                    break
-                case 1:
-                    print("取り出すボールの個数を入力して下さい >")
-                    box1.removeBalls(balls: KeyboardUtils.inputInt())
-                    break
-                default:
-                    print("箱の番号の入力が誤っています。")
-                }
-            break
+            case 0:
+                print("取り出すボールの個数を入力して下さい >")
+                box0.removeBalls(balls: KeyboardUtils.inputInt())
+                
+            case 1:
+                print("取り出すボールの個数を入力して下さい >")
+                box1.removeBalls(balls: KeyboardUtils.inputInt())
+                
+            default:
+                print("箱の番号の入力が誤っています。")
+            }
             
         case 3:
-            let total = box0.num + box1.num
-            Box.displayTotalNumber(totalNumber: total)
-            break
+            Box.displayTotalNumber()
             
         default :
             print("アプリケーションを終了します")
