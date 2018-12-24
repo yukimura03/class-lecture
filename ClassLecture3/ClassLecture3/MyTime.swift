@@ -10,9 +10,9 @@ import Foundation
 
 class MyTime {
     
-    var hour : Int
-    var minute : Int
-    var second : Int
+    var hour: Int
+    var minute: Int
+    var second: Int
     
     init(hour: Int, minute: Int, second: Int){
         self.hour = hour
